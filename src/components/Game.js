@@ -222,7 +222,7 @@ export default function Game() {
           Status: {`${status}`}
         </div>
         <div className="submit">
-          <button onClick={handleSubmit}>Submit this grid</button>
+          <button onClick={handleSubmit}>Submit</button>
         </div>
         <div className="difficulty">
           <select
