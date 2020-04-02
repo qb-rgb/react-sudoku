@@ -198,6 +198,7 @@ export default function Game() {
       ));
 
       setSquares(squares);
+      dispatchFocus({ type: 'FOCUS_ON_EMPTY' });
     } catch {
       // TODO: handle the fetch error
       console.log('Fetch error: sudoku board initialization');
