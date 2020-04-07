@@ -26,7 +26,7 @@ export default function Square({
       return "#5ad67f";
     } else if (isSameAsFocused) {
       return "#7dabf5";
-    }else if (isError) {
+    } else if (isError) {
       return "#ff4d4d";
     } else {
       return "black";

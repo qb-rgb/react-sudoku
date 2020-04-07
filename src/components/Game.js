@@ -6,7 +6,7 @@ import Board from './Board';
 // API related
 const API_ENDPOINT = 'https://sugoku.herokuapp.com';
 const encodeBoard = (board) => board.reduce((result, row, i) => result + `%5B${encodeURIComponent(row)}%5D${i === board.length -1 ? '' : '%2C'}`, '');
-const encodeParams = (params) => 
+const encodeParams = (params) =>
   Object.keys(params).map(
     key => key + `=%5B${encodeBoard(params[key])}%5D`
   ).join('&');
